@@ -44,7 +44,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}/app:${{ env.VERSION }}
+          tags: ghcr.io/${{ github.repository }}/fass:${{ env.VERSION }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
