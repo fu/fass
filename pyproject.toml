@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling", "versioningit"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fass"
+dynamic = ["version"]
+description = "FastAPI selenium website scraper"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = [
+    "fastapi",
+    "selenium",
+    "webdriver_manager",
+    "uvicorn",
+    "python-multipart"
+]
+requires-python = ">=3.7"
+
+[tool.hatch.version]
+source = "versioningit"
+
+[tool.hatch.build.targets.wheel]
+universal = true
