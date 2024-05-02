@@ -1,4 +1,7 @@
-# FASS - FastAPI - Selenium - Scraper
+<p align="center">
+  <img src="https://raw.githubusercontent.com/fu/fass/main/logo/fass.png" />
+</p>
+<h2 align="center">FASS - FastAPI - Selenium - Scraper</h2>
 
 This simple server enables scraping of website with dynamic content.
 It exposes the parser via rest API: `http://localhost:8000/parse` and accepts POST in the form of, e.g.
