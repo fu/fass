@@ -3,6 +3,12 @@
 </p>
 <h2 align="center">FASS - FastAPI - Selenium - Scraper</h2>
 
+![Latest Tag](https://img.shields.io/github/v/tag/fu/fass)
+![Build Status](https://github.com/fu/fass/workflows/Build%20and%20Push%20Docker%20image/badge.svg)
+![License](https://img.shields.io/github/license/fu/fass)
+![Docker Pulls](https://img.shields.io/docker/pulls/zerealfu/fass.svg)
+![Docker Image Size](https://img.shields.io/docker/image-size/zerealfu/fass/latest)
+
 This simple server enables scraping of website with dynamic content.
 It exposes the parser via rest API: `http://localhost:8000/parse` and accepts POST in the form of, e.g.
 
