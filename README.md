@@ -49,16 +49,30 @@ Clone this repo and
 
 `docker build -t fass_app .`
 
-and
-
-`docker run -d -p 8000:8000 fass_app`
-
-then execute the curl command above.
-
 ### From Docker hub
 
 `docker pull zerealfu/fass:latest` 
 
-for example. 
+## Running the service
+
+`docker run -d -p 8000:8000 fass_app`
+
+then execute the curl for example:
+
+```
+curl -X POST "http://localhost:8000/parse/" -H "Content-Type: application/json" -d '[
+            {
+                "url": "https://github.com/pymzml/pymzML/",
+                "name": "Github stars",
+                "delay": "1",
+                "patterns": [
+                    {
+                        "name": "Star Counter",
+                        "regex": "Counter js-social-count\\\">(?P<Stars>[0-9]*)</span>"
+                    }
+                ]
+            }
+        ]'
+```
 
 Have fun :)
