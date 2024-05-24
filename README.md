@@ -51,7 +51,7 @@ then execute the curl command above.
 
 ### From Docker hub
 
-`docker pull zerealfu/fass:0.1.0 ` 
+`docker pull zerealfu/fass:latest` 
 
 for example. 
 
