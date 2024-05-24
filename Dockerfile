@@ -19,7 +19,6 @@ ADD . /fass
 WORKDIR /fass
 
 # Upgrade pip and install required Python packages
-RUN ls -la
 RUN pip install --upgrade pip && pip install --no-cache-dir hatch 
 RUN hatch version
 RUN pip install --no-cache-dir .
