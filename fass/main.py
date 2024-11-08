@@ -110,5 +110,5 @@ async def parse(request: Request):
                 item_data["all_fields_matched"] = False
                 continue
             item_data[pattern["name"]] = matches
-        respone.append(item_data)
-    return item_data
+        response.append(item_data)
+    return response
