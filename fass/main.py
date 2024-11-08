@@ -75,6 +75,7 @@ async def parse(request: Request):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+    response = []
     for item in items:
         item_data = {"name": item["name"]}
         url = item["url"]
@@ -109,5 +110,5 @@ async def parse(request: Request):
                 item_data["all_fields_matched"] = False
                 continue
             item_data[pattern["name"]] = matches
-
-    return item_data
+        response.append(item_data)
+    return response
